@@ -59,7 +59,7 @@ GlucoVision Risk Alert Engine fires **real-time glucose alerts before dangerous 
 
 ### Prerequisites
 
-- Python ≥ 3.11, Kafka, Redis, PostgreSQL, Docker & Docker Compose
+- Python ≥ 3.11, Kafka, Redis, MySQL, Docker & Docker Compose
 
 ### Setup (once scaffolded)
 
@@ -80,7 +80,7 @@ docker compose up --build
 | Event Streaming | Apache Kafka (confluent-kafka-python) |
 | Real-Time State | Redis (deduplication cache) |
 | WebSocket | FastAPI WebSocket endpoint |
-| Database | PostgreSQL (alert history, thresholds) |
+| Database | MySQL (alert history, thresholds) |
 | Containerisation | Docker |
 
 ---
